@@ -15,7 +15,6 @@
         <meta itemprop="image" content="">
         <meta itemprop="description" content="">
 
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <!-- Style Meta Data -->
         <link rel="stylesheet" href="https://oliver-wiedemann.net/theme/css/style.css" type="text/css"/>
         <link rel="stylesheet" href="https://oliver-wiedemann.net/theme/css/pygments.css" type="text/css"/>
@@ -38,10 +37,7 @@
     <meta property="og:image" content=""/>
 
 		<script type="text/javascript" async
-  		src="/static/mathjax/MathJax.js?config=TeX-MML-AM_CHTML">
-		</script>
-		<script type="text/x-mathjax-config">
-  		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+			src="/static/mathjax/tex-chtml.js">
 		</script>
 </head>
 
@@ -109,29 +105,29 @@ process and circumvent bad local energy minima.</p>
 <ul>
 <li>Genetic optimization by simulated annealing:<ul>
 <li>Grid or circular layout</li>
-<li>$\sum\limits_i ||e_i||_2$ or #EdgeIntersections as fitness criteria.</li>
+<li>\(\sum\limits_i ||e_i||_2\) or #EdgeIntersections as fitness criteria.</li>
 </ul>
 </li>
 <li>Galaxy: A straight-forward <em>force directed</em> implementation.
   The name is due to the typical shape this algorithm produces.</li>
-<li>Fruchterman-Reingold algorithm. </li>
+<li>Fruchterman-Reingold algorithm.</li>
 <li>Dijkstra shortest-path.</li>
 <li>General graph handling, representation and conversion.</li>
 <li>OpenGL based visualization which nicely depicts optimization progress.</li>
 </ul>
 <h2>Todo</h2>
 <ul>
-<li>Add rudimentary interface to avoid recompiling b/c of parameter changes. </li>
+<li>Add rudimentary interface to avoid recompiling b/c of parameter changes.</li>
 <li>Port OpenGL to Vulcan just for fun and out of interest.</li>
 <li>Add more algorithms.</li>
 </ul>
 <h2>Sample Layouts:</h2>
 <p><img alt="tree82-square-edgelength" src="https://oliver-wiedemann.net/images/graphcx/tree82-square-edgelength.png">
-<em>Simulated annealing grid layout of <a href="/static/graphs/tree82inc.txt">tree82inc</a>, using $\sum\limits_i ||e_i||_2$ as a fitness criterion.</em>
+<em>Simulated annealing grid layout of <a href="/static/graphs/tree82inc.txt">tree82inc</a>, using \(\sum\limits_i ||e_i||_2\) as a fitness criterion.</em>
 <img alt="tree82-ssde" src="https://oliver-wiedemann.net/images/graphcx/tree82-ssde.png">
 <em>SSDE layout of <a href="/static/graphs/tree82inc.txt">tree82inc</a>.</em>
 <img alt="matrix1-square-edgelength" src="https://oliver-wiedemann.net/images/graphcx/matrix1-square-edgelength.png">
-<em>Grid layout of <a href="/static/graphs/matrix1inc.txt">matrix1inc</a>, using $\sum\limits_i ||e_i||_2$ as a fitness criterion.</em>
+<em>Grid layout of <a href="/static/graphs/matrix1inc.txt">matrix1inc</a>, using \(\sum\limits_i ||e_i||_2\) as a fitness criterion.</em>
 <img alt="original-galaxy" src="https://oliver-wiedemann.net/images/graphcx/original-galaxy.png">
 <em>Galaxy layout of <a href="/static/graphs/originalinc.txt">originalinc</a>.</em></p>
             </div>
@@ -141,39 +137,10 @@ process and circumvent bad local energy minima.</p>
                 <span> in </span>
                 <span class="post_category"><a href="https://oliver-wiedemann.net/category/misc.html" rel="bookmark"
                                                title="Permalink to misc">[ misc ]</a></span>
-                <span class="post_date">Mon 18 March 2019</span>
+                <span class="post_date">Tue 01 October 2019</span>
                 <div><span>Tags : </span>
                 </div>
 
-                <div class="entry-social">
-                    <span class="twitter"><a target="_blank" rel="nofollow"
-                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
-                                             title="Twitter"
-                                             href="https://twitter.com/share?url=https://oliver-wiedemann.net/blog/graphcx.html&text=Graphcx&via="><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/twitter-s.png"></a></span>
-
-                    <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://oliver-wiedemann.net/blog/graphcx.html&hl=fr"
-                                           rel="nofollow"
-                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/google-s.png"></a></span>
-
-                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
-                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=https://oliver-wiedemann.net/blog/graphcx.html&t=Graphcx"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/facebook-s.png"></a></span>
-
-                    <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://oliver-wiedemann.net/blog/graphcx.html&title=Graphcx"
-                       rel="nofollow"
-                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/linkedin-s.png"></a>
-
-                    <span class="mail"><a
-                            href="mailto:?subject=Graphcx&amp;body=Viens découvrir un article à propos de [Graphcx] sur le site de Oliver Wiedemann. https://oliver-wiedemann.net/blog/graphcx.html"
-                            title="Share by Email" target="_blank"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/mail-s.png"></a></span>
-                </div>
             </div>
         </article>
     </section>

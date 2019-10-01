@@ -15,7 +15,6 @@
         <meta itemprop="image" content="">
         <meta itemprop="description" content="">
 
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <!-- Style Meta Data -->
         <link rel="stylesheet" href="https://oliver-wiedemann.net/theme/css/style.css" type="text/css"/>
         <link rel="stylesheet" href="https://oliver-wiedemann.net/theme/css/pygments.css" type="text/css"/>
@@ -38,10 +37,7 @@
     <meta property="og:image" content=""/>
 
 		<script type="text/javascript" async
-  		src="/static/mathjax/MathJax.js?config=TeX-MML-AM_CHTML">
-		</script>
-		<script type="text/x-mathjax-config">
-  		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+			src="/static/mathjax/tex-chtml.js">
 		</script>
 </head>
 
@@ -87,17 +83,17 @@
                 <p><strong>Piecewise-linear tracing utility for implicitly defined curves</strong></p>
 <p><img alt="traceu-plot1" src="https://oliver-wiedemann.net/images/traceu-plot1.png">  </p>
 <h2>Example: Fixpoints</h2>
-<p>Let $g: \mathbb{R}^n \rightarrow \mathbb{R}^n, g_k(x) = \exp\Big( \cos\Big( k \cdot \sum\limits_{i=1}^n x_i \Big)\Big)$ for $k = 1,\ldots,n$</p>
+<p>Let \( g: \mathbb{R}^n \rightarrow \mathbb{R}^n, g_k(x) = \exp\Big( \cos\Big( k \cdot \sum\limits_{i=1}^n x_i \Big)\Big) \) for \(k = 1,\ldots,n\)</p>
 <p>Considering the homotopy</p>
-<p>$$H:[0,1] \times \mathbb{R}^n \rightarrow \mathbb{R}^n, (\lambda,x) \mapsto x - \lambda g(x)$$ </p>
-<p>it is obvious, that $H(0,x) = x$ and $H(1,x) = 0 \Leftrightarrow x = g(x)$
-One approach to find fixpoints of $g$ is therefore to follow $H^{-1}(0)$ starting at $x=0$ until
-$\lambda = 1$ holds. <strong>traceu</strong> provides piecewise linear approximations of such curves with upper
+<p>$$H:[0,1] \times \mathbb{R}^n \rightarrow \mathbb{R}^n, (\lambda,x) \mapsto x - \lambda g(x)$$</p>
+<p>it is obvious, that \(H(0,x) = x\) and \(H(1,x) = 0 \Leftrightarrow x = g(x)\)
+One approach to find fixpoints of \(g\) is therefore to follow \(H^{-1}(0)\) starting at \(x=0\) until
+\(\lambda = 1\) holds. <strong>traceu</strong> provides piecewise linear approximations of such curves with upper
 bounds for the error enabling further (e.g. newton-type) methods to be successfully applied
-on the results. The picture above depicts a trace of $H^{-1}(0)$ for $n=10$.</p>
+on the results. The picture above depicts a trace of \(H^{-1}(0)\) for \(n=10\).</p>
 <h2>About the Project</h2>
 <ul>
-<li>Still beta, under heavy development.</li>
+<li>Still beta, development is quite stale.</li>
 <li>Written in C.</li>
 <li>Quite unrestrictive regarding input requirements (e.g. no derivability needed).</li>
 </ul>
@@ -114,39 +110,10 @@ on the results. The picture above depicts a trace of $H^{-1}(0)$ for $n=10$.</p>
                 <span> in </span>
                 <span class="post_category"><a href="https://oliver-wiedemann.net/category/misc.html" rel="bookmark"
                                                title="Permalink to misc">[ misc ]</a></span>
-                <span class="post_date">Mon 18 March 2019</span>
+                <span class="post_date">Tue 01 October 2019</span>
                 <div><span>Tags : </span>
                 </div>
 
-                <div class="entry-social">
-                    <span class="twitter"><a target="_blank" rel="nofollow"
-                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
-                                             title="Twitter"
-                                             href="https://twitter.com/share?url=https://oliver-wiedemann.net/blog/traceu.html&text=Traceu&via="><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/twitter-s.png"></a></span>
-
-                    <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://oliver-wiedemann.net/blog/traceu.html&hl=fr"
-                                           rel="nofollow"
-                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/google-s.png"></a></span>
-
-                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
-                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=https://oliver-wiedemann.net/blog/traceu.html&t=Traceu"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/facebook-s.png"></a></span>
-
-                    <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://oliver-wiedemann.net/blog/traceu.html&title=Traceu"
-                       rel="nofollow"
-                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/linkedin-s.png"></a>
-
-                    <span class="mail"><a
-                            href="mailto:?subject=Traceu&amp;body=Viens découvrir un article à propos de [Traceu] sur le site de Oliver Wiedemann. https://oliver-wiedemann.net/blog/traceu.html"
-                            title="Share by Email" target="_blank"><img
-                            src="https://oliver-wiedemann.net/theme/images/icons/mail-s.png"></a></span>
-                </div>
             </div>
         </article>
     </section>
