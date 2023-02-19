@@ -180,11 +180,13 @@ aside > h2 {
   display: block;
   margin-left: 0px;
   margin-right: 0px;
-  border: 1px solid #095f7c;
+  /* border: 1px solid #095f7c; */
   margin-top: 30px;
   position: relative;
   z-index: 1;
 }
+
+
 
 .nav > ul > li
 {
@@ -224,6 +226,13 @@ aside > h2 {
   padding: 0.33147rem 0;
   border-bottom: 3px solid #095f7c;
 } 
+
+.navfooter
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 
 /*--------Responsive------------*/
@@ -265,13 +274,10 @@ aside > h2 {
     padding: 1em;
     margin-left: 1em;
     margin-top: 0;
+    display: inline-block;
+    vertical-align: bottom;
   }
 
-  #avatar {
-    height: 50px;
-    width: 50px;
-    margin: 10px auto;
-  }
 }
 
 img {
